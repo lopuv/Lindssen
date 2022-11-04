@@ -4,38 +4,95 @@
              x:Class="Lindssen_app.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="210" />
+                <RowDefinition />
+                <RowDefinition Height="210" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="210"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button 
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
+            <Button 
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"/>
+            <Button 
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <Button 
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"/>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <Button 
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <Button 
+                    Grid.Column="5"
+                    Grid.Row="5"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <Button 
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
 
-        </VerticalStackLayout>
+            <Button 
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
+
+            <Button 
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Text="appel"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
+        </Grid>
     </ScrollView>
 
 </ContentPage>
