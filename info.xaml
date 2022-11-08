@@ -3,4 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lindssen_app.info"
              Title="info">
+
+    <Button
+        x:Name="info_button"
+        Clicked="Info_button_Clicked"
+        WidthRequest="100"
+        HeightRequest="100"
+        />
 </ContentPage>
