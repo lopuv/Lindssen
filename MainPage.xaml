@@ -4,95 +4,105 @@
              x:Class="Lindssen_app.MainPage">
 
     <ScrollView>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="210" />
-                <RowDefinition />
-                <RowDefinition Height="210" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="210"/>
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Button 
-                    Grid.Column="0"
-                    Grid.Row="0"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
-            <Button 
-                    Grid.Column="1"
-                    Grid.Row="0"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Center"/>
-            <Button 
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
+        <StackLayout>
+            <Grid RowSpacing="8"
+                      ColumnSpacing="8"
+                      Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <!--col 0-->
+                <Button 
+                            Clicked= "Button1_Clicked"
+                            x:Name="button1"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Text="appel"
+                            HeightRequest="200"
+                            />
+                <Button 
+                            Clicked= "Button1_Clicked"
+                            x:Name="button2"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            Text="appel"
+                            HeightRequest="200"
+                            />
 
-            <Button 
-                    Grid.Column="1"
-                    Grid.Row="1"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Center"/>
+                <!--col 1-->
+                <Button 
+                            Clicked= "Button1_Clicked"
+                            x:Name="button3"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Text="appel"
+                            HeightRequest="200"
+                            />
 
-            <Button 
-                    Grid.Column="2"
-                    Grid.Row="2"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
+                <Button 
+                            Clicked= "Button1_Clicked"
+                            x:Name="button4"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            Text="appel"
+                            HeightRequest="200"
+                            />
 
-            <Button 
-                    Grid.Column="5"
-                    Grid.Row="5"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
+                <!--col 2-->
+                <Button 
+                            Clicked= "Button1_Clicked"
+                            x:Name="button5"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Text="appel"
+                            HeightRequest="200"
+                            />
 
-            <Button 
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
+                <Button 
+                            Clicked= "Button1_Clicked"
+                            x:Name="button6"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            Text="appel"
+                            HeightRequest="200"
+                            />
+                <!--col 3-->
+                    <Button 
+                                Clicked= "Button1_Clicked"
+                                x:Name="button7"
+                                Grid.Column="0"
+                                Grid.Row="3"
+                                Text="appel"
+                                HeightRequest="200"
+                                />
 
-            <Button 
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
+                    <Button 
+                                Clicked= "Button1_Clicked"
+                                x:Name="button8"
+                                Grid.Column="1"
+                                Grid.Row="3"
+                                Text="appel"
+                                HeightRequest="200"
+                                />
 
-            <Button 
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Text="appel"
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Start"/>
-        </Grid>
+                    <Button 
+                                Clicked= "Button1_Clicked"
+                                x:Name="button9"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Text="appel"
+                                HeightRequest="200"
+                                />
+       
+            </Grid>
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>

@@ -9,9 +9,10 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void Button1_Clicked(object sender, EventArgs e)
+	private async void Button1_Clicked(object sender, EventArgs e)
 	{
-		Debug.WriteLine("the call comes from button");
+		await Navigation.PushAsync(new info());
 	}
+
 }
 
