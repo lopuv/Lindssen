@@ -19,85 +19,85 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <!--col 0-->
-                <Button 
+                <ImageButton 
+                            Source="dotnet_bot.svg"
                             Clicked= "Button1_Clicked"
                             x:Name="button1"
                             Grid.Column="0"
                             Grid.Row="0"
-                            Text="appel"
                             HeightRequest="200"
                             />
-                <Button 
+                <ImageButton 
+                            Source="dotnet_bot.svg"
                             Clicked= "Button1_Clicked"
                             x:Name="button2"
                             Grid.Column="1"
                             Grid.Row="0"
-                            Text="appel"
                             HeightRequest="200"
                             />
 
                 <!--col 1-->
-                <Button 
+                <ImageButton 
+                            Source="dotnet_bot.svg"
                             Clicked= "Button1_Clicked"
                             x:Name="button3"
                             Grid.Column="0"
                             Grid.Row="1"
-                            Text="appel"
                             HeightRequest="200"
                             />
 
-                <Button 
+                <ImageButton
+                            Source="dotnet_bot.svg"
                             Clicked= "Button1_Clicked"
                             x:Name="button4"
                             Grid.Column="1"
                             Grid.Row="1"
-                            Text="appel"
                             HeightRequest="200"
                             />
 
                 <!--col 2-->
-                <Button 
+                <ImageButton
+                            Source="dotnet_bot.svg"
                             Clicked= "Button1_Clicked"
                             x:Name="button5"
                             Grid.Column="0"
                             Grid.Row="2"
-                            Text="appel"
                             HeightRequest="200"
                             />
 
-                <Button 
+                <ImageButton 
+                            Source="dotnet_bot.svg"
                             Clicked= "Button1_Clicked"
                             x:Name="button6"
                             Grid.Column="1"
                             Grid.Row="2"
-                            Text="appel"
                             HeightRequest="200"
                             />
                 <!--col 3-->
-                    <Button 
+                    <ImageButton    
+                                Source="dotnet_bot.svg"
                                 Clicked= "Button1_Clicked"
                                 x:Name="button7"
                                 Grid.Column="0"
                                 Grid.Row="3"
-                                Text="appel"
                                 HeightRequest="200"
                                 />
 
-                    <Button 
+                    <ImageButton
+                                Source="dotnet_bot.svg"
                                 Clicked= "Button1_Clicked"
                                 x:Name="button8"
                                 Grid.Column="1"
                                 Grid.Row="3"
-                                Text="appel"
                                 HeightRequest="200"
                                 />
 
-                    <Button 
+                    <ImageButton
+                                Source="dotnet_bot.svg"
                                 Clicked= "Button1_Clicked"
                                 x:Name="button9"
                                 Grid.Column="0"
                                 Grid.Row="1"
-                                Text="appel"
                                 HeightRequest="200"
                                 />
        

@@ -1,7 +1,5 @@
 ﻿namespace Lindssen_app;
 
-using System.Diagnostics;
-
 public partial class MainPage : ContentPage
 {
 	public MainPage()
