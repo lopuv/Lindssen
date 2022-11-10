@@ -8,9 +8,4 @@ public partial class info : ContentPage
 	{
 		InitializeComponent();
 	}
-
-	private void Info_button_Clicked(object sender, EventArgs e)
-	{
-		info_button.Text = "appel";
-	}
 }
