@@ -20,7 +20,7 @@
                 </Grid.ColumnDefinitions>
                 <!--col 0-->
                 <ImageButton 
-                            Source="dotnet_bot.svg"
+                            Source="Batterij.png"
                             Clicked= "Button1_Clicked"
                             x:Name="button1"
                             Grid.Column="0"
@@ -28,7 +28,7 @@
                             HeightRequest="200"
                             />
                 <ImageButton 
-                            Source="dotnet_bot.svg"
+                            Source="Benzine.png"
                             Clicked= "Button1_Clicked"
                             x:Name="button2"
                             Grid.Column="1"
@@ -38,7 +38,7 @@
 
                 <!--col 1-->
                 <ImageButton 
-                            Source="dotnet_bot.svg"
+                            Source="Stroom.png"
                             Clicked= "Button1_Clicked"
                             x:Name="button3"
                             Grid.Column="0"
@@ -47,7 +47,7 @@
                             />
 
                 <ImageButton
-                            Source="dotnet_bot.svg"
+                            Source="Gas.png"
                             Clicked= "Button1_Clicked"
                             x:Name="button4"
                             Grid.Column="1"
@@ -57,7 +57,7 @@
 
                 <!--col 2-->
                 <ImageButton
-                            Source="dotnet_bot.svg"
+                            Source="Temp.png"
                             Clicked= "Button1_Clicked"
                             x:Name="button5"
                             Grid.Column="0"
@@ -66,7 +66,7 @@
                             />
 
                 <ImageButton 
-                            Source="dotnet_bot.svg"
+                            Source="Weer.png"
                             Clicked= "Button1_Clicked"
                             x:Name="button6"
                             Grid.Column="1"
@@ -75,7 +75,7 @@
                             />
                 <!--col 3-->
                     <ImageButton    
-                                Source="dotnet_bot.svg"
+                                Source="Anker.png"
                                 Clicked= "Button1_Clicked"
                                 x:Name="button7"
                                 Grid.Column="0"
@@ -84,7 +84,7 @@
                                 />
 
                     <ImageButton
-                                Source="dotnet_bot.svg"
+                                Source="GPS.png"
                                 Clicked= "Button1_Clicked"
                                 x:Name="button8"
                                 Grid.Column="1"
