@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lindssen_app.info"
              Title="info">
+    <Grid>
+        <Label
+            x:Name="banaan"
+            Text="..."/>
 
+        <Button
+            x:Name="citroen"
+            Clicked="citroen_Clicked"
+            HeightRequest="200"
+            WidthRequest="200" />
 
+    </Grid>
 </ContentPage>
