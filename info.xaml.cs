@@ -23,9 +23,11 @@ namespace Lindssen_app
 		{
 			HttpClient client = new HttpClient();
 
-			var response = await client.GetStringAsync("http://192.168.178.143/yachts/data.json");
+			var response = await client.GetStringAsync("https://yacht.yotem.nl/data.json");
 			User useR = JsonConvert.DeserializeObject<User>(response);
 			banaan.Text = useR.Id;
+			appel.Text = useR.Username;
+			peer.Text = useR.Password;
 		}
 
       

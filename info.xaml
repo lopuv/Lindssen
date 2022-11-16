@@ -4,8 +4,26 @@
              x:Class="Lindssen_app.info"
              Title="info">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
         <Label
+            Grid.Row="0"
             x:Name="banaan"
+            Text="..."/>
+
+        <Label
+            Grid.Row="1"
+            x:Name="appel"
+            Text="..."/>
+
+        <Label
+            Grid.Row="2"
+            x:Name="peer"
             Text="..."/>
 
         <Button
