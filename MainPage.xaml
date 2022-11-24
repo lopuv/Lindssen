@@ -19,78 +19,20 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <!--col 0-->
-                <ImageButton 
-                            Source="batterij.png"
-                            Clicked= "Button1_Clicked"
-                            x:Name="button1"
-                            Grid.Column="0"
-                            Grid.Row="0"
-                            HeightRequest="200"
-                            />
-                <ImageButton 
-                            Source="benzine.png"
-                            Clicked= "Button1_Clicked"
-                            x:Name="button2"
-                            Grid.Column="1"
-                            Grid.Row="0"
-                            HeightRequest="200"
-                            />
-
-                <!--col 1-->
-                <ImageButton 
-                            Source="stroom.png"
-                            Clicked= "Button1_Clicked"
-                            x:Name="button3"
-                            Grid.Column="0"
-                            Grid.Row="1"
-                            HeightRequest="200"
-                            />
-
-                <ImageButton
-                            Source="gas.png"
-                            Clicked= "Button1_Clicked"
-                            x:Name="button4"
-                            Grid.Column="1"
-                            Grid.Row="1"
-                            HeightRequest="200"
-                            />
-
-                <!--col 2-->
-                <ImageButton
-                            Source="temp.png"
-                            Clicked= "Button1_Clicked"
-                            x:Name="button5"
-                            Grid.Column="0"
-                            Grid.Row="2"
-                            HeightRequest="200"
-                            />
-
-                <ImageButton 
-                            Source="weer.png"
-                            Clicked= "Button1_Clicked"
-                            x:Name="button6"
-                            Grid.Column="1"
-                            Grid.Row="2"
-                            HeightRequest="200"
-                            />
-                <!--col 3-->
-                    <ImageButton    
-                                Source="anker.png"
-                                Clicked= "Button1_Clicked"
-                                x:Name="button7"
-                                Grid.Column="0"
-                                Grid.Row="3"
-                                HeightRequest="200"
-                                />
-
-                <ImageButton
-                                Source="gps.png"
-                                Clicked= "Button1_Clicked"
-                                x:Name="button8"
-                                Grid.Column="1"
-                                Grid.Row="3"
-                                HeightRequest="200"
-                                />
+                <Entry x:Name="username"
+                       Placeholder="Username"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       />
+                <Entry x:Name="password"
+                       Placeholder="Password"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       />
+                <Button
+                    x:Name="login"
+                    Clicked="login_Clicked"
+                    />
             </Grid>
         </StackLayout>
     </ScrollView>

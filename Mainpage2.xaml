@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lindssen_app.Mainpage2">
+
+    <ScrollView>
+        <StackLayout>
+            <Grid RowSpacing="8"
+                      ColumnSpacing="8"
+                      Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <!--col 0-->
+                <ImageButton 
+                            Source="batterij.png"
+                            Clicked= "Button1_Clicked"
+                            x:Name="button1"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            HeightRequest="200"
+                            />
+                <ImageButton 
+                            Source="benzine.png"
+                            Clicked= "Button1_Clicked"
+                            x:Name="button2"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            HeightRequest="200"
+                            />
+
+                <!--col 1-->
+                <ImageButton 
+                            Source="stroom.png"
+                            Clicked= "Button1_Clicked"
+                            x:Name="button3"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            HeightRequest="200"
+                            />
+
+                <ImageButton
+                            Source="gas.png"
+                            Clicked= "Button1_Clicked"
+                            x:Name="button4"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            HeightRequest="200"
+                            />
+
+                <!--col 2-->
+                <ImageButton
+                            Source="temp.png"
+                            Clicked= "Button1_Clicked"
+                            x:Name="button5"
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            HeightRequest="200"
+                            />
+
+                <ImageButton 
+                            Source="weer.png"
+                            Clicked= "Button1_Clicked"
+                            x:Name="button6"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            HeightRequest="200"
+                            />
+                <!--col 3-->
+                <ImageButton    
+                                Source="anker.png"
+                                Clicked= "Button1_Clicked"
+                                x:Name="button7"
+                                Grid.Column="0"
+                                Grid.Row="3"
+                                HeightRequest="200"
+                                />
+
+                <ImageButton
+                                Source="gps.png"
+                                Clicked= "Button1_Clicked"
+                                x:Name="button8"
+                                Grid.Column="1"
+                                Grid.Row="3"
+                                HeightRequest="200"
+                                />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
