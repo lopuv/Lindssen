@@ -9,23 +9,20 @@ namespace Lindssen_app
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class info : ContentPage
 	{
-		public info()
+
+        public info()
 		{
 			InitializeComponent();
-
-		}
+        }
 
         private void citroen_Clicked(object sender, EventArgs e)
         {
-			Getinfo();
+			Display_info();
         }
 
-		public async void Getinfo()
-		{
-			HttpClient client = new HttpClient();
-
-			var response = await client.GetStringAsync("https://yacht.yotem.nl/data.json");
-            JsonProcess j = JsonConvert.DeserializeObject<JsonProcess>(response);
+		public void Display_info()
+		{	
+			JsonProcess j = new JsonProcess();
 			appel.Text = j.username;
 			peer.Text = j.password;
 		}
