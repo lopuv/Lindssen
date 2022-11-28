@@ -53,7 +53,6 @@ namespace Lindssen_app
 
             string json = JsonConvert.SerializeObject(this);
             request.Content = new StringContent(json, Encoding.UTF8, "application/json");
-            //request.Content = new StringContent(this.username, Encoding.UTF8, "application/json");
             var response = await client.SendAsync(request);
         }
 
