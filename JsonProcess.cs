@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Specialized;
 using System.Net.Http;
+using Newtonsoft.Json.Linq;
+using System.Net.Http.Json;
 
 namespace Lindssen_app
 {
@@ -38,21 +40,19 @@ namespace Lindssen_app
         }
 
 
-        public void SaveData(bool isNewUser = false)
+        public async Task SaveData(bool isNewUser = false)
         {
 
+            using var client = new HttpClient();
+            var request = new HttpRequestMessage()
+            {
+                Method = HttpMethod.Post,
+                RequestUri = new Uri("http://10.20.209.31/yachts/")
+            };
             string json = JsonConvert.SerializeObject(this);
-            StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
-
-            if (isNewUser)
-            {
-                //look how this function works
-                client.PostAsync("http://192.168.178.143/yacht/data.json", content).ConfigureAwait(false);
-            }
-            else
-            {
-                client.PutAsync("http://192.168.178.143/yacht/data.json", content).ConfigureAwait(false);
-            }
+            request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+            //request.Content = new StringContent(this.username, Encoding.UTF8, "application/json");
+            var response = await client.SendAsync(request);
         }
 
     }

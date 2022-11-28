@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
 		{
 			j.username= username.Text;
 			j.password = password.Text;
-			j.SaveData(true);
+			await j.SaveData(true);
         }
     }
 }
