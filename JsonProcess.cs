@@ -19,6 +19,7 @@ namespace Lindssen_app
         //public int id { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public string info { get; set; }
 
         private HttpClient client = new HttpClient();
 
@@ -31,24 +32,25 @@ namespace Lindssen_app
         {
         }
 
-        public async void Getinfo()
+        public async Task Getinfo()
         {
-            var response = await client.GetStringAsync("https://yacht.yotem.nl/data.json");
-            JsonProcess j = JsonConvert.DeserializeObject<JsonProcess>(response);
-            j.username = this.username;
-            j.password = this.password;
+            var response = await client.GetStringAsync("http://172.28.112.1/yacht/data.json");
+            string j = JsonConvert.DeserializeObject<string>(response);
+            this.info = j.ToString();
         }
 
 
-        public async Task SaveData(bool isNewUser = false)
+        public async Task SaveData()
         {
 
             using var client = new HttpClient();
             var request = new HttpRequestMessage()
             {
                 Method = HttpMethod.Post,
-                RequestUri = new Uri("http://10.20.209.31/yachts/")
+                RequestUri = new Uri("http://172.28.112.1/yacht/")
             };
+      
+
             string json = JsonConvert.SerializeObject(this);
             request.Content = new StringContent(json, Encoding.UTF8, "application/json");
             //request.Content = new StringContent(this.username, Encoding.UTF8, "application/json");

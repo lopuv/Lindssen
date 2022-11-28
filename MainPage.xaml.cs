@@ -17,16 +17,31 @@ public partial class MainPage : ContentPage
 		if (username.Text == null)
 		{
 			await DisplayAlert("Username", "username can not be empty", "ok");
+			j.info = "Username empty";
+			await j.SaveData();
 		}
 		else if(password.Text == null)
 		{
             await DisplayAlert("Password", "password can not be empty", "ok");
+            j.info = "Password empty";
+			await j.SaveData();
         }
 		else
 		{
 			j.username= username.Text;
 			j.password = password.Text;
-			await j.SaveData(true);
+			await j.SaveData();
+			await j.Getinfo();
+			await DisplayAlert("login", "loggin succesfull", "ok");
+			if (j.info == "session started")
+			{
+                await Navigation.PushAsync(new Mainpage2());
+            }
+			else 
+			{
+				await j.Getinfo();
+                await DisplayAlert("EROR", j.info, "ok");
+            }
         }
     }
 }
