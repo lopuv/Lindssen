@@ -1,9 +1,12 @@
-﻿namespace Lindssen_app;
+﻿using System.Windows.Input;
+
+namespace Lindssen_app;
 
 public partial class AppShell : Shell
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+    public AppShell()
+    {
+        InitializeComponent();
+
+    }
 }

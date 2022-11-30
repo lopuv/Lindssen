@@ -16,22 +16,26 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
+                    <ColumnDefinition  Width="200"/>
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <!--col 0-->
                 <Entry x:Name="username"
                        Placeholder="Username"
                        Grid.Row="1"
-                       Grid.Column="0"
+                       Grid.Column="1"
                        />
                 <Entry x:Name="password"
                        Placeholder="Password"
-                       Grid.Row="1"
+                       Grid.Row="2"
                        Grid.Column="1"
                        />
                 <Button
+                    Text="login"
                     x:Name="login"
                     Clicked="login_Clicked"
+                    Grid.Row="3"
+                    Grid.Column="1"
                     />
             </Grid>
         </StackLayout>
